@@ -1,0 +1,76 @@
+.loaderArea {
+  background: #13161d;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+}
+
+
+#loader {
+    display: block;
+    position: relative;
+    left: 40%;
+    top: 40%;
+    width: 300px;
+    height: 310px;
+    margin: -50px 0 0 -50px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    border-top-color: #0aff84;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    border-top-color: #38ea9d;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 1.7s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    border-top-color: #0dbc67;
+    -webkit-animation: spin 3.5s linear infinite;
+    animation: spin 1.6s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
